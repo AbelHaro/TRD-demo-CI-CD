@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Suma de dos números</h1>
-        <form onsubmit="calculateSum(event)">
+        <form id="sumForm">
             <label for="num1">Número 1:</label>
             <input type="number" id="num1" name="num1" required />
             <br />
@@ -18,16 +18,18 @@
         </form>
         <p id="result"></p>
 
-        <script src="script.js"></script>
+        <script type="module" src="script.js"></script>
         <style>
             body {
                 font-family: Arial, sans-serif;
                 background-color: #eaeaea;
                 color: #333;
-                align-items: center;
+                display: flex;
                 justify-content: center;
-                height: 100vh;
+                align-items: center;
+                height: 50vh;
                 margin: 0;
+                flex-direction: column;
             }
 
             h1 {
