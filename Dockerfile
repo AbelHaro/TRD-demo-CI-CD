@@ -15,7 +15,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 RUN apt-get install -y nodejs=22.11.0-1nodesource1
 
 # Establece el directorio de trabajo dentro del contenedor
-WORKDIR /usr/src/app
+WORKDIR /usr/src/
 
 # Copia los archivos de la aplicación (incluyendo index.html) al contenedor
 COPY . .
@@ -25,6 +25,8 @@ RUN npm install
 
 # Expone el puerto 8080 (puedes cambiarlo según sea necesario)
 EXPOSE 8080
+
+WORKDIR /usr/src/app/
 
 # Inicia el servidor HTTP para servir el archivo index.html
 CMD ["npm", "run", "start"]
