@@ -2,8 +2,11 @@ version: "3.8"
 
 services:
   suma-app:
-    build: .
+    image: abelharo2/trd-app:latest
     ports:
       - "8080:8080"
-    environment:
-      - NODE_ENV=production
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30
