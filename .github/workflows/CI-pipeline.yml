@@ -48,8 +48,8 @@ jobs:
 
       # Construcción de la imagen de Docker
       - name: Build Docker image
-        run: docker build -t usuario/mi-imagen:latest .
+        run: docker build -t abelharo2/trd-app:latest .
 
       # Subir la imagen a Docker Hub
       - name: Push Docker image
-        run: docker push usuario/mi-imagen:latest
+        run: docker push abelharo2/trd-app:latest
