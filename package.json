@@ -1,6 +1,6 @@
 {
   "name": "trd-proyecto",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Pruebas simples para explicar el CI/CD",
   "main": "script.js",
   "scripts": {
