@@ -7,7 +7,7 @@
     "test": "mocha app/test.js",
     "start": "http-server app/ -p 8080"
   },
-  "author": "",
+  "author": "Abel Haro Armero, Juan David Ramírez Salamanca",
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.0.0"
