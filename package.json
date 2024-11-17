@@ -1,13 +1,13 @@
 {
   "name": "trd-proyecto",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Pruebas simples para explicar el CI/CD",
   "main": "script.js",
   "scripts": {
     "test": "mocha app/test.js",
     "start": "http-server app/ -p 8080"
   },
-  "author": "",
+  "author": "Abel Haro Armero, Juan David Ramírez Salamanca",
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.0.0"
